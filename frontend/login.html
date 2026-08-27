@@ -1,1 +1,6 @@
-
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Login | ManoRaksha</title><link rel="stylesheet" href="/css/app.css"></head>
+<body><main class="auth"><div class="panel"><h1>ManoRaksha</h1><p class="muted">Demo login • use any email and password.</p>
+<label>Email<input id="email" type="email" value="demo@example.com"></label><label>Password<input id="password" type="password" value="demo123"></label>
+<label>Role<select id="role"><option value="victim">Beneficiary</option><option value="counsellor">Counsellor</option><option value="district">District</option><option value="state">State</option><option value="national">National</option><option value="admin">Administrator</option></select></label>
+<button class="btn primary full" onclick="login()">Continue</button><p id="msg" class="error"></p></div></main>
+<script>async function login(){const msg=document.getElementById('msg');msg.textContent='';try{const r=await fetch('/api/auth/demo-login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:email.value,password:password.value,role:role.value})});const d=await r.json();if(!r.ok)throw Error(d.error||'Login failed');localStorage.setItem('mr_token',d.token);location.href=d.redirect;}catch(e){msg.textContent=e.message}}</script></body></html>
