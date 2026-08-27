@@ -1,1 +1,5 @@
-
+[
+  {"case_id":"DEMO-001","language":"hi","mood":2,"anxiety":5,"sleep_difficulty":4,"feels_unsafe":false,"synthetic":true},
+  {"case_id":"DEMO-002","language":"gu","mood":4,"anxiety":2,"sleep_difficulty":2,"feels_unsafe":false,"synthetic":true},
+  {"case_id":"DEMO-003","language":"ta","mood":1,"anxiety":5,"sleep_difficulty":5,"feels_unsafe":true,"synthetic":true}
+]
