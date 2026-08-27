@@ -1,0 +1,4 @@
+{"text":"I feel overwhelmed and want support","language":"en","intent":"support_request","support_level":"elevated","synthetic":true}
+{"text":"मैं बहुत परेशान महसूस कर रहा हूँ और किसी से बात करना चाहता हूँ","language":"hi","intent":"support_request","support_level":"elevated","synthetic":true}
+{"text":"મને ખૂબ તણાવ લાગે છે અને મને કોઈ સાથે વાત કરવી છે","language":"gu","intent":"support_request","support_level":"elevated","synthetic":true}
+{"text":"எனக்கு மிகவும் கவலையாக உள்ளது, யாரிடமாவது பேச வேண்டும்","language":"ta","intent":"support_request","support_level":"elevated","synthetic":true}
