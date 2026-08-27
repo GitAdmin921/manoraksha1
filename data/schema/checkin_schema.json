@@ -1,1 +1,37 @@
-
+{
+  "type": "object",
+  "required": [
+    "language",
+    "mood",
+    "anxiety",
+    "sleep_difficulty",
+    "feels_unsafe"
+  ],
+  "properties": {
+    "language": {
+      "type": "string"
+    },
+    "mood": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "anxiety": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "sleep_difficulty": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "feels_unsafe": {
+      "type": "boolean"
+    },
+    "message": {
+      "type": "string",
+      "maxLength": 3000
+    }
+  }
+}
